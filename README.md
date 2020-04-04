@@ -16,16 +16,19 @@ This replaces the default Massdrop Alt firmware with some additional lighting ef
 
 ## Lighting modes
 
-- Rainbow Horizontal
-- Rainbow Vertical
-- Rainbow Reactive
-- Outrun Horizontal
-- Outrun Vertical
-- Outrun Reactive
-- Light
-- Light Reactive
-- Soothing
-- Soothing Reactive
+| Key  | Action                                           |
+| :--- | :----------------------------------------------- |
+| Fn+Z | Toggles RGB visibility on all/keys/underglow/off |
+| Fn+A | Previous lighting mode                           |
+| Fn+D | Next lighting mode                               |
+| Fn+Q | Effect speed decrease                            |
+| Fn+E | Effect speed increase                            |
+| Fn+W | Illumination increase                            |
+| Fn+D | Illumination decrease                            |
+| Fn+R | Hue increase                                     |
+| Fn+F | Hue decrease                                     |
+| Fn+R | Hue saturation increase                          |
+| Fn+F | Hue saturation decrease                          |
 
 # Installation
 
