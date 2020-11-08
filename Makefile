@@ -13,8 +13,8 @@ ALT_KEYBOARD_ROOT_PATH = $(QMK_BASE_PATH)keyboards/massdrop/alt/
 ALT_KEYMAP_PATH = $(ALT_KEYBOARD_ROOT_PATH)keymaps/
 
 build:
-	git clone git@github.com:Massdrop/mdloader.git $(MDLOADER_PATH)
-	cd $(MDLOADER_PATH) && make
+	git clone git@github.com:Massdrop/mdloader.git $(MDLOADER_BASE_PATH)
+	cd $(MDLOADER_BASE_PATH) && make
 
 link:
 	ln -s $(CWD)/$(KM_NAME) $(ALT_KEYMAP_PATH)
@@ -27,6 +27,10 @@ compile:
 
 flash:
 	cd $(MDLOADER_BUILD_PATH) && ./mdloader -f -D $(FW_BIN_NAME) --restart
+	cd $(CWD)
+
+smarteep:
+	cd $(MDLOADER_BUILD_PATH) && ./mdloader -f --smarteep
 	cd $(CWD)
 
 aio:
